@@ -1,7 +1,5 @@
 <div>
-  <p class="mb-5 font-bold">
-    {{ item?.title }} ({{ item?.artistObject?.name }})
-  </p>
+  <p class="mb-5">{{ item?.name }}</p>
   <div class="overflow-hiden fade-in w-auto">
     <img
       src="{{ getImage() }}"
@@ -11,5 +9,5 @@
       height="600"
     />
   </div>
-  <p class="mt-5 mb-5">{{ getGenrers(item?.genre) }}</p>
+  <p class="mt-5"></p>
 </div>
