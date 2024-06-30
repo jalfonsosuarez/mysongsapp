@@ -8,6 +8,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { SongCardComponent } from './components/song-card/song-card.component';
 import { RenderAreaComponent } from './components/render-area/render-area.component';
+import { SongsService } from './services/songs.service';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,10 @@ import { RenderAreaComponent } from './components/render-area/render-area.compon
     SidebarComponent,
     DashboardComponent,
     SongCardComponent,
-    RenderAreaComponent
+    RenderAreaComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

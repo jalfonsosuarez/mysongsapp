@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SongsService } from '../../services/songs.service';
+import { Song } from '../../interfaces/song';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styles: ``,
 })
 export class DashboardComponent implements OnInit {
-  constructor() {}
+  songs: Song[] = [];
 
-  ngOnInit() {}
+  constructor(private songsService: SongsService) {}
+
+  async ngOnInit() {
+    //this.songs = this.songsService.getAllSongs();
+    this.songs = await this.songsService.getAllSongs();
+  }
 }
