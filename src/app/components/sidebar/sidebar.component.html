@@ -1,0 +1,61 @@
+<div *ngIf="getState()">
+  <!-- Background black -->
+  <div
+    class="fixed top-0 left-0 w-screen h-screen z-10 bg-black opacity-30"
+  ></div>
+
+  <!-- Blur -->
+  <div
+    class="fade-in fixed top-0 left-0 w-screen h-screen z-10 backdrop-filter backdrop-blur-sm"
+  ></div>
+
+  <!-- SideMenu -->
+  <nav
+    class="fixed p-5 left-0 top-0 w-[300px] h-screen bg-white z-20 shadow-2xl transform transition-all duration-300"
+  >
+    <div class="flex justify-between">
+      <p text-2xl text-bold>Menu</p>
+      <button
+        (click)="closeSideMenu()"
+        class="top-5 right-5 cursor-pointer text-right"
+      >
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Line separator -->
+    <div class="w-full h-px bg-gray-600 my-5"></div>
+
+    <!-- Menú -->
+    <a
+      href=""
+      class="flex item-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
+    >
+      <p class="ml-3 text-xl">Opcion 1</p>
+    </a>
+    <a
+      href=""
+      class="flex item-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
+    >
+      <p class="ml-3 text-xl">Opcion 2</p>
+    </a>
+    <a
+      href=""
+      class="flex item-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
+    >
+      <p class="ml-3 text-xl">Opcion 1</p>
+    </a>
+    <a
+      href=""
+      class="flex item-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
+    >
+      <p class="ml-3 text-xl">Opcion 3</p>
+    </a>
+    <a
+      href=""
+      class="flex item-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
+    >
+      <p class="ml-3 text-xl">Opcion 4</p>
+    </a>
+  </nav>
+</div>
