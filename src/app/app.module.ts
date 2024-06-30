@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { SongCardComponent } from './components/song-card/song-card.component';
+import { RenderAreaComponent } from './components/render-area/render-area.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SidebarComponent,
-    DashboardComponent
+    DashboardComponent,
+    SongCardComponent,
+    RenderAreaComponent
   ],
   imports: [
     BrowserModule,

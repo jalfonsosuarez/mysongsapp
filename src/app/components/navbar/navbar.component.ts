@@ -6,6 +6,8 @@ import { SetMenuState } from '../../services/setMenuState';
   templateUrl: './navbar.component.html',
 })
 export class NavbarComponent {
+  title = 'Canciones';
+
   constructor(private setMenuState: SetMenuState) {}
 
   openMenu() {
