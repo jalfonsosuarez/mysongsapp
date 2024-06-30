@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Song } from '../../interfaces/song';
 
 @Component({
   selector: 'app-song-card',
   templateUrl: './song-card.component.html',
-  styles: ``
+  styles: ``,
 })
 export class SongCardComponent {
-
+  @Input() item: Song | undefined;
 }

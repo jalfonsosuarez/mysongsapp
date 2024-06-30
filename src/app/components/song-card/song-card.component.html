@@ -1,11 +1,13 @@
-<div class="overflow-hiden fade-in w-auto">
-  <p class="mb-5">Song Title (Artist)</p>
-  <img
-    src="http://dummyimage.com/400x600.png/cc0000/ffffff"
-    class="img-fluid content-center"
-    alt="Song poster"
-    width="400"
-    height="600"
-  />
+<div>
+  <p class="mb-5">{{ item?.title }} (Artist)</p>
+  <div class="overflow-hiden fade-in w-auto">
+    <img
+      src="{{ item?.poster }}"
+      class="img-fluid content-center"
+      alt="Song poster"
+      width="400"
+      height="600"
+    />
+  </div>
   <p class="mt-5">Genders</p>
 </div>
