@@ -9,6 +9,10 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { SongCardComponent } from './components/song-card/song-card.component';
 import { RenderAreaComponent } from './components/render-area/render-area.component';
 import { SongsService } from './services/songs.service';
+import { ArtistComponent } from './pages/artist/artist.component';
+import { ArtistCardComponent } from './components/artist-card/artist-card.component';
+import { CompanyComponent } from './pages/company/company.component';
+import { CompanyCardComponent } from './components/company-card/company-card.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +22,10 @@ import { SongsService } from './services/songs.service';
     DashboardComponent,
     SongCardComponent,
     RenderAreaComponent,
+    ArtistComponent,
+    ArtistCardComponent,
+    CompanyComponent,
+    CompanyCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

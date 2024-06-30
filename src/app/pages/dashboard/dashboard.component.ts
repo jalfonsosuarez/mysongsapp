@@ -13,7 +13,6 @@ export class DashboardComponent implements OnInit {
   constructor(private songsService: SongsService) {}
 
   async ngOnInit() {
-    //this.songs = this.songsService.getAllSongs();
     this.songs = await this.songsService.getAllSongs();
   }
 }
