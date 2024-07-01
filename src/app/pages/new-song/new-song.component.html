@@ -1,0 +1,80 @@
+<div class="flex flex-col ml-5 mr-5 sm:w-auto sm:items-center">
+  <form class="sm:w-1/4">
+    <label class="mb-2" for="title">
+      <span class="text-gray-700 flex flex-col">Título</span>
+      <input
+        type="text"
+        name="title"
+        class="form-input rounded px-4 py-3 w-full"
+        [value]="title"
+        placeholder="Indique el título de la canción"
+      />
+    </label>
+    <label class="mb-2" for="artist">
+      <span class="text-gray-700 flex flex-col">Artistas</span>
+      <input
+        type="text"
+        name="artist"
+        class="form-input rounded px-4 py-3 w-full"
+        [value]="artist"
+        placeholder="Indique el artista o artistas"
+      />
+    </label>
+    <label class="mb-2" for="genre">
+      <span class="text-gray-700 flex flex-col">Género</span>
+      <input
+        type="text"
+        name="genre"
+        class="form-input rounded px-4 py-3 w-full"
+        [value]="genre"
+        placeholder="Indique el título de la canción"
+      />
+    </label>
+    <label class="block mb-2" for="company">
+      <span class="text-gray-700 flex flex-col">Compañía</span>
+      <input
+        type="text"
+        name="company"
+        class="form-input rounded px-4 py-3 w-full"
+        [value]="company"
+        placeholder="Indique el título de la canción"
+      />
+    </label>
+    <label class="block mb-2" for="country">
+      <span class="text-gray-700 flex flex-col">País</span>
+      <input
+        type="text"
+        name="country"
+        class="form-input rounded px-4 py-3 w-full"
+        [value]="country"
+        placeholder="Indique el título de la canción"
+      />
+    </label>
+    <label class="block mb-2" for="year">
+      <span class="text-gray-700 flex flex-col">Año</span>
+      <input
+        type="text"
+        name="year"
+        class="form-input rounded px-4 py-3 w-full"
+        [value]="year"
+        placeholder="Indique el título de la canción"
+      />
+    </label>
+    <label class="block mb-2" for="valuation">
+      <span class="text-gray-700 flex flex-col">Valoración</span>
+      <input
+        type="text"
+        name="valuation"
+        class="form-input rounded px-4 py-3 w-full"
+        [value]="valuation"
+        placeholder="Indique el título de la canción"
+      />
+    </label>
+    <div class="grid grid-cols-2 items-right">
+      <button class="bg-red-700 text-white rounded px-2 py-2">Cancelar</button>
+      <button class="bg-blue-700 text-white rounded px-2 py-2 ml-2">
+        Guardar
+      </button>
+    </div>
+  </form>
+</div>
