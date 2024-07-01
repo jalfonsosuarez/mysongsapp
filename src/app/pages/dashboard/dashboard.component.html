@@ -1,8 +1,6 @@
-<div class="absolute container mt-20 w-full z-1">
-  <div
-    class="flex flex-col columns-1 items-center"
-    *ngFor="let song of songs; index as i"
-  >
-    <app-song-card [item]="song"></app-song-card>
-  </div>
+<div
+  class="flex flex-col columns-1 items-center"
+  *ngFor="let song of songs; index as i"
+>
+  <app-song-card [item]="song"></app-song-card>
 </div>

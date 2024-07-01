@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+  padding-top: 80px;
+  overflow: hidden;
+}
