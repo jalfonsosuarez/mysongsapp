@@ -1,8 +1,6 @@
-<div class="absolute container mt-20 w-full z-1">
-  <div
-    class="flex flex-col sm:items-center"
-    *ngFor="let company of companies; index as i"
-  >
-    <app-company-card [item]="company"></app-company-card>
-  </div>
+<div
+  class="flex flex-col sm:items-center"
+  *ngFor="let company of companies; index as i"
+>
+  <app-company-card [item]="company"></app-company-card>
 </div>

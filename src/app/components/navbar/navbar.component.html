@@ -1,12 +1,10 @@
-<nav class="fixed px-5 justify-between items-center w-full z-10">
-  <div>
-    <button
-      (click)="openMenu()"
-      class="m-2 p-2 rounded-md transition-all hover:bg-gray-100"
-    >
-      <i class="fa-solid fa-bars"></i>
-    </button>
-    <span class="text-2xl">{{ title }}</span>
-  </div>
+<header class="w-full py-3">
+  <button
+    (click)="openMenu()"
+    class="m-2 p-2 rounded-md transition-all hover:bg-gray-100"
+  >
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <span class="text-2xl">{{ title }}</span>
   <div class="w-full mt-1 h-px bg-gray-600"></div>
-</nav>
+</header>
