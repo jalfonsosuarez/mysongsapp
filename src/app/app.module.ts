@@ -13,6 +13,7 @@ import { CompanyComponent } from './pages/company/company.component';
 import { CompanyCardComponent } from './components/company-card/company-card.component';
 import { NewSongComponent } from './pages/new-song/new-song.component';
 import { EditSongComponent } from './pages/edit-song/edit-song.component';
+import { ViewSongComponent } from './pages/view-song/view-song.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { EditSongComponent } from './pages/edit-song/edit-song.component';
     CompanyCardComponent,
     NewSongComponent,
     EditSongComponent,
+    ViewSongComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
